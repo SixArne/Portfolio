@@ -66,4 +66,3 @@ const projects = [
     :members="projects"
   />
 </VPTeamPage>
----
