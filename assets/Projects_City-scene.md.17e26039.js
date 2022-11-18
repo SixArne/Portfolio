@@ -1,0 +1,1 @@
+import{_ as e,o as t,c}from"./app.efa37449.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Projects/City-scene.md"}'),r={name:"Projects/City-scene.md"};function s(a,o,n,i,p,_){return t(),c("div")}const f=e(r,[["render",s]]);export{m as __pageData,f as default};

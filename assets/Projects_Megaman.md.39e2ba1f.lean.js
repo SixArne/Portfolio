@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.efa37449.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Projects/Megaman.md"}'),r={name:"Projects/Megaman.md"};function o(n,s,c,m,p,_){return t(),a("div")}const f=e(r,[["render",o]]);export{i as __pageData,f as default};
