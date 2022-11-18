@@ -1,58 +1,50 @@
 <script setup lang="ts">
-import type { DefaultTheme } from 'vitepress/theme'
-import VPIconHeart from 'vitepress/theme'
-import VPLink from 'vitepress/theme'
-import VPSocialLinks from 'vitepress/themee'
-import VPButton from 'vitepress/theme'
+import { defineComponent } from 'vue';
+import { useRouter } from 'vitepress'
+//import { VPLink } from 'vitepress'
+import { CustomCardProps } from './CustomCardProps'
+
+let router = useRouter();
 
 defineProps<{
-  size?: 'small' | 'medium'
-  member: DefaultTheme.TeamMember
-}>()
+    size?: 'small' | 'medium',
+    project: CustomCardProps
+}>();
+
+
 </script>
 
 <template>
-  <article class="VPTeamMembersItem" :class="[size ?? 'medium']">
-    <div class="profile">
+  <article class="VPTeamprojectsItem" :class="[size ?? 'medium']">
+    <div class="profile" @click="router.go(project.goto)">
       <figure class="avatar">
-        <img class="avatar-img" :src="member.avatar" :alt="member.name">
+        <img class="avatar-img" :src="project.avatar" :alt="project.name">
       </figure>
       <div class="data">
         <h1 class="name">
-          {{ member.name }}
+          {{ project.name }}
         </h1>
-        <p v-if="member.title || member.org" class="affiliation">
-          <span v-if="member.title" class="title">
-            {{ member.title }}
+        <p v-if="project.title || project.org" class="affiliation">
+          <span v-if="project.title" class="title">
+            {{ project.title }}
           </span>
-          <span v-if="member.title && member.org" class="at">
+          <span v-if="project.title && project.org" class="at">
             @
           </span>
-          <VPLink v-if="member.org" class="org" :class="{ link: member.orgLink }" :href="member.orgLink" no-icon>
-            {{ member.org }}
+          <VPLink v-if="project.org" class="org" :class="{ link: project.orgLink }" :href="project.orgLink" no-icon>
+            {{ project.org }}
           </VPLink>
         </p>
-        <p v-if="member.desc" class="desc">
-          {{ member.desc }}
+        <p v-if="project.desc" class="desc">
+          {{ project.desc }}
         </p>
-        <div v-if="member.links" class="links">
-          <VPSocialLinks :links="member.links" />
-        </div>
-        <div class="button"> 
-          <VPButton text="Read more"/>
-        </div>
       </div>
-    </div>
-    <div v-if="member.sponsor" class="sp">
-      <VPLink class="sp-link" :href="member.sponsor" no-icon>
-        <VPIconHeart class="sp-icon" /> Sponsor
-      </VPLink>
     </div>
   </article>
 </template>
 
 <style scoped>
-.VPTeamMembersItem {
+.VPTeamprojectsItem {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -62,73 +54,78 @@ defineProps<{
   overflow: hidden;
 }
 
-.VPTeamMembersItem.small .profile {
+.VPTeamprojectsItem.small .profile {
   padding: 32px;
 }
 
-.VPTeamMembersItem.small .data {
+.profile:hover {
+  background-color: rgba(0,150,0,0.1);
+  cursor: pointer;
+}
+
+.VPTeamprojectsItem.small .data {
   padding-top: 20px;
 }
 
-.VPTeamMembersItem.small .avatar {
+.VPTeamprojectsItem.small .avatar {
   width: 64px;
   height: 64px;
 }
 
-.VPTeamMembersItem.small .name {
+.VPTeamprojectsItem.small .name {
   line-height: 24px;
   font-size: 16px;
 }
 
-.VPTeamMembersItem.small .affiliation {
+.VPTeamprojectsItem.small .affiliation {
   padding-top: 4px;
   line-height: 20px;
   font-size: 14px;
 }
 
-.VPTeamMembersItem.small .desc {
+.VPTeamprojectsItem.small .desc {
   padding-top: 12px;
   line-height: 20px;
   font-size: 14px;
 }
 
-.VPTeamMembersItem.small .links {
+.VPTeamprojectsItem.small .links {
   margin: 0 -16px -20px;
   padding: 10px 0 0;
 }
 
-.VPTeamMembersItem.medium .profile {
+.VPTeamprojectsItem.medium .profile {
   padding: 48px 32px;
 }
 
-.VPTeamMembersItem.medium .data {
+.VPTeamprojectsItem.medium .data {
   padding-top: 24px;
   text-align: center;
 }
 
-.VPTeamMembersItem.medium .avatar {
-  width: 96px;
-  height: 96px;
+.VPTeamprojectsItem.medium .avatar {
+  width: 144px;
+  height: 144px;
 }
 
-.VPTeamMembersItem.medium .name {
+.VPTeamprojectsItem.medium .name {
   letter-spacing: 0.15px;
   line-height: 28px;
   font-size: 20px;
 }
 
-.VPTeamMembersItem.medium .affiliation {
+.VPTeamprojectsItem.medium .affiliation {
   padding-top: 4px;
   font-size: 16px;
 }
 
-.VPTeamMembersItem.medium .desc {
+.VPTeamprojectsItem.medium .desc {
   padding-top: 16px;
   max-width: 288px;
   font-size: 16px;
 }
 
-.VPTeamMembersItem.medium .links {
+.VPTeamprojectsItem.medium .links {
   margin: 0 -16px -12px;
   padding: 16px 12px 0;
 }
@@ -146,7 +143,7 @@ defineProps<{
   position: relative;
   flex-shrink: 0;
   margin: 0 auto;
-  border-radius: 50%;
+  border-radius: 20%;
   box-shadow: var(--vp-shadow-3);
 }
 
@@ -156,7 +153,7 @@ defineProps<{
   right: 0;
   bottom: 0;
   left: 0;
-  border-radius: 50%;
+  border-radius: 20%;
   object-fit: cover;
 }
 

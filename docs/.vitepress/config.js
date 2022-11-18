@@ -1,39 +1,62 @@
-import {UserConfig} from 'vitepress'
-
-
-
 export default {
+    base: '/Portfolio/',
+    markdown: {
+      theme: 'material-palenight',
+      lineNumbers: true
+    },
     themeConfig: {
+      // algolia: { 
+      //   appId: 'M0EB8DF79K', 
+      //   apiKey: '60f71fb647190f6ba5ebf1a12ca59459', 
+      //   indexName: 'project' 
+      // }, 
       siteTitle: 'Six Arne Portfolio',
       nav: [
-        { text: 'Projects', link: '/projects' },
-        { text: 'Vulkan guide', link: '/Vulkan/index.md' }
+        { text: 'Projects', link: '/Projects/index.md' },
+        { text: 'Vulkan guide', link: '/Vulkan/introduction.md' }
       ],
-      sidebar: [
-        {
-          text: 'School projects',
-          items: [
-            { text: 'Software raytracer', link: '/getting-started' },
-            { text: 'Software/DirectX rasterizer', link: '/getting-started' },
-            { text: 'Megaman', link: '/introduction' },
-            { text: 'City Scene', link: '/getting-started' },
-            { text: 'Environments Scene', link: '/getting-started' },
-          ]
-        },
-        {
-          text: 'Personal projects',
-          items: [
-            { text: 'Vulkan rasterizer', link: '/Projects/Vulkan-rasterizer.md'},
-            { text: 'Vulkan raytracer', link: '/Projects/Vulkan-raytracer.md'},
-          ],
-        },
-        {
-          text: 'Vulkan',
-          items: [
-            { text: 'Introduction', link: '/Vulkan/introduction.md' }
-          ]
-        }
-      ],
+      sidebar: {
+        '/Projects/': [
+          {
+            text: '', items: [
+              { text: 'Project overview', link: '/Projects/index.md'}
+            ]
+          },
+          {
+            text: 'School projects',
+            collapsible: true,
+            collapsed: false,
+            items: [
+              { text: 'Software raytracer', link: '/Projects/Software-raytracer.md' },
+              { text: 'Software/DirectX rasterizer', link: '/Projects/Software-rasterizer.md' },
+              { text: 'Megaman', link: '/Projects/Megaman.md' },
+              { text: 'City Scene', link: '/Projects/City-scene.md' },
+              { text: 'Environments Scene', link: '/Projects/Environments.md' },
+            ]
+          },
+          {
+            text: 'Personal projects',
+            collapsible: true,
+            collapsed: false,
+            items: [
+              { text: 'Vulkan rasterizer', link: '/Projects/Vulkan-rasterizer.md'},
+              { text: 'Vulkan raytracer', link: '/Projects/Vulkan-raytracer.md'},
+            ],
+          },
+        ],
+        '/Vulkan/': [
+          {
+            text: 'Vulkan',
+            items: [
+              { text: 'Introduction', link: '/Vulkan/introduction.md' },
+              { text: 'Setup', link: '/Vulkan/setup.md'}
+            ]
+          }
+        ]
+      },
+      footer: {
+        message: 'Made with Vitepress and Vue',
+        copyright: 'Copyright @ 2022-present Six Arne'
+      }
     },
-    
 }
