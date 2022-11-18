@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as r}from"./app.efa37449.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Projects/Software-raytracer.md"}'),a={name:"Projects/Software-raytracer.md"};function o(c,s,n,p,_,f){return t(),r("div")}const m=e(a,[["render",o]]);export{i as __pageData,m as default};
