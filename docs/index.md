@@ -10,8 +10,8 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: Get Started
-      link: /guide/what-is-vitepress
+      text: Projects
+      link: /projects
     - theme: alt
       text: View on GitHub
       link: https://github.com/SixArne
@@ -19,14 +19,14 @@ hero:
 
 features:
   - icon: ⚡️
-    title: Vite, The DX that can't be beat
-    details: Lorem ipsum...
+    title: Researches and learns fast
+    details: My number one tool for anything will always be the official documentation, I will always find a solution to a given problem.
   - icon: 🖖
     title: Social and a teacher
     details: I have helped numerous students who struggled with programming and 3D related topics
   - icon: 🛠️
-    title: Simple and minimal, always
-    details: Lorem ipsum...
+    title: Skill proficiencies
+    details: C++, C#, DirectX, Vulkan, Unreal Engine, Unity, Python
 
 
 ---
