@@ -15,6 +15,10 @@ export default {
         { text: 'Projects', link: '/Projects/index.md' },
         { text: 'Vulkan guide', link: '/Vulkan/introduction.md' }
       ],
+      socialLinks: [
+        { icon: 'github', link: 'https://github.com/SixArne' },
+        { icon: 'linkedin', link: 'https://www.linkedin.com/in/arne-six-a21994138/' }
+      ],
       sidebar: {
         '/Projects/': [
           {
