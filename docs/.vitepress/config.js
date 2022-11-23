@@ -13,7 +13,8 @@ export default {
       siteTitle: 'Six Arne Portfolio',
       nav: [
         { text: 'Projects', link: '/Projects/index.md' },
-        { text: 'Vulkan guide', link: '/Vulkan/introduction.md' }
+        { text: 'Vulkan guide', link: '/Vulkan/introduction.md' },
+        { text: 'Computer Graphics', link: '/Software Computer Graphics/index.md' }
       ],
       socialLinks: [
         { icon: 'github', link: 'https://github.com/SixArne' },
@@ -56,7 +57,22 @@ export default {
               { text: 'Setup', link: '/Vulkan/setup.md'}
             ]
           }
-        ]
+        ],
+        '/Software Computer Graphics/': [
+          {
+            text: 'Raytracing',
+            items: [
+              { text: 'Introduction', link: '/Software Computer Graphics/Raytracing/introduction.md' },
+              { text: 'Casting the rays', link: '/Software Computer Graphics/Raytracing/ray-generation.md' },
+            ],
+          },
+          {
+            text: 'Rasterizer',
+            items: [
+
+            ],
+          }
+        ],
       },
       footer: {
         message: 'Made with Vitepress and Vue',

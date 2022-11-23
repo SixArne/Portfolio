@@ -3,6 +3,9 @@ import VueClickAwayExample from './components/VueClickAwayExample.vue'
 import CustomProjectCards from './components/CustomProjectCards.vue'
 import CustomModelProjector from './components/CustomModelProjector.vue'
 
+// Custom css
+import './custom.css'
+
 export default {
   ...DefaultTheme,
   enhanceApp(ctx) {

@@ -16,6 +16,9 @@ hero:
       text: Vulkan
       link: /Vulkan/introduction.md
     - theme: alt
+      text: Computer Graphics
+      link: /Software Computer Graphics/index.md
+    - theme: alt
       text: View on GitHub
       link: https://github.com/SixArne
     
@@ -31,6 +34,4 @@ features:
   - icon: 🛠️
     title: Skill proficiencies
     details: C++, C#, DirectX, Vulkan, Unreal, Unity, Typescript, Golang, Python
-
-
 ---
