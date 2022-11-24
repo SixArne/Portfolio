@@ -8,7 +8,9 @@ For those that don't know: Vulkan is also known as the next generation of OpenGL
 decided to give the developers full control of the API. This makes Vulkan very configurable but also hard to learn, hence
 I've decided to start my journey and this is the result.
 
-```cpp
-VkSurfaceCreateInfo createInfo{}
-createInfo.sType = VK_STRUCTURE_TYPE_SURFACE_CREATE_INFO;
-```
+## The first 1000 lines
+
+Vulkan is by far the most difficult API to get started with because it bombards the developers with loads of information. Because
+of the sheer configuration possibilities it takes a LONG time to render anything to the screen. But I can say that learning Vulkan is very interesting
+because it FORCES you to grasp these concepts.
+

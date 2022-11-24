@@ -54,7 +54,8 @@ export default {
             text: 'Vulkan',
             items: [
               { text: 'Introduction', link: '/Vulkan/introduction.md' },
-              { text: 'Setup', link: '/Vulkan/setup.md'}
+              { text: 'Setup', link: '/Vulkan/setup.md'},
+              { text: 'Concepts', link: '/Vulkan/concepts.md'}
             ]
           }
         ],
