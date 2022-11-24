@@ -3,6 +3,7 @@
 ## Disclaimer
 
 This is by no way official documentation of Vulkan, but rather my own take and way of handling Vulkan code.
+By writing this myself I am forcing myself to do research on the workings of the vulkan API.
 
 ## What is Vulkan?
 
