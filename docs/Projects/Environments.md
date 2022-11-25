@@ -79,5 +79,12 @@ And finally they told me about some post processing and exponential fog, and aft
 However that floor took me too long to make, I had to make 11 different floor pieces to make sure it fitted and even then there were stil noticible mistakes. So I just decided to redo my floor and texture the final pieces before the next feedback session arrived.
 
 ![environments blockout](/environments_update_4.5.png)
+::: danger FEEDBACK
+The theme is a lot clearer now but you flipped the balance a bit. The walls could use a bit more depth and noise and the pilars a bit less.
+The floor also needs a bit more variation.
+The pipe needs a texture to make it fit a bit better into your scene.
+
+And you lose a lot of visibility in the ceiling, make it a bit lighter.
+:::
 
 ## [Github](https://github.com/SixArne/Environ)
