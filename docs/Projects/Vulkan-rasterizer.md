@@ -196,3 +196,10 @@ But in Vulkan's case I was starting to see why they did it.
 ::: danger Realisation
 and that.... was just the pipeline alone...
 :::
+
+## The first simple triangle meshes
+
+After writing around 1400~ lines of code I was able to display a few triangle meshes that could spin.
+I also implemented some camera movement so we can look around in the scene.
+
+![Vulkan triangle meshes](/VulkanRasterizer/basicTriangleMeshes.png)

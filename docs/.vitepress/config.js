@@ -46,6 +46,7 @@ export default {
             items: [
               { text: 'Vulkan rasterizer', link: '/Projects/Vulkan-rasterizer.md'},
               { text: 'Vulkan raytracer', link: '/Projects/Vulkan-raytracer.md'},
+              { text: 'CHIP-8 Emulator', link: '/Projects/CHIP-8.md'},
             ],
           },
         ],
