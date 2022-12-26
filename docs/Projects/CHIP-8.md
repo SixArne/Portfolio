@@ -37,6 +37,18 @@ This meant that I would have to find written documentation on the inner workings
 Luckily the older a system is the more documentation you can find, especially on the classical CHIP-8 that is considered as the `Hello world` example of
 emulation.
 
+## The key components to implement
+
+To make the CHIP8 there are a few components that had to be implemented to have a functioning system:
+
+- Memory 
+- Screen
+- Sprite rendering
+- Registers
+- Sound
+
+After having implemented these I could continue to the next step: being the opcodes.
+
 ## Source code
 
 - [Github](https://github.com/SixArne/CHIP-8)

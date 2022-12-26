@@ -14,6 +14,62 @@ In the third week we had to implement some basic triangle clipping, everything t
 
 ![week_3_result](/rasterizer_week_3.png)
 
+## End assignment
+
+Doing this on the CPU is great to learn, but not really practical as things run a `LOT` slower than on the GPU.
+The end assignment of this subject was simple: `'Make an application that can switch the renderer between DirectX11 and the CPU'`.
+
+So after spending some time on polymorphing the code it can now switch between the 2 renderers! By making a base render class and overriding the
+base methods you can easily switch the renderers without much issue. However how the mesh is rendered is very different between DirectX and the CPU, So
+I decided to abstract the mesh location and transforms away and just pass their pointers to the specific meshes instead.
+
+```cpp
+class BaseRenderer
+{
+public:
+	BaseRenderer(SDL_Window* pWindow, Camera* pCamera);
+	...
+
+	virtual void Update(Timer* pTimer) {};
+	virtual void Render() {};
+
+protected:
+    // Shared data
+	...
+};
+
+class DirectX_Renderer: public BaseRenderer
+{
+public:
+    // external mesh data 
+	DirectX_Renderer(SDL_Window* pWindow, Camera* pCamera, std::vector<MeshData*> pMeshes);
+	...
+
+	virtual void Update(Timer* pTimer) override;
+	virtual void Render() override;
+
+private:
+	// Specific DirectX members
+    std::vector<DirectXMeshes*> m_pMeshes{};
+	...
+};
+
+class DirectXMesh
+{
+public:
+	DirectXMesh(ID3D11Device* pDevice, MeshData* meshData);
+	...
+
+private:
+    // Shared data like transforms
+	MeshData* m_pMeshData{};
+
+    // Dx11 properties
+	...
+};
+
+```
+
 ## Resources
 
 ## [Github](https://github.com/SixArne/Rasterizer-Arne-Six-2GD-08E)
