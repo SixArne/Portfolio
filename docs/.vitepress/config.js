@@ -12,9 +12,9 @@ export default {
       // }, 
       siteTitle: 'Six Arne Portfolio',
       nav: [
-        { text: 'Projects', link: '/Projects/index.md' },
-        { text: 'Vulkan guide', link: '/Vulkan/introduction.md' },
-        { text: 'Computer Graphics', link: '/Software Computer Graphics/index.md' }
+        { text: 'Projects', link: '/Projects/index.md' }
+        //{ text: 'Vulkan guide', link: '/Vulkan/introduction.md' },
+        //{ text: 'Computer Graphics', link: '/Software Computer Graphics/index.md' }
       ],
       socialLinks: [
         { icon: 'github', link: 'https://github.com/SixArne' },
@@ -49,32 +49,36 @@ export default {
               { text: 'CHIP-8 Emulator', link: '/Projects/CHIP-8.md'},
             ],
           },
-        ],
-        '/Vulkan/': [
-          {
-            text: 'Vulkan',
-            items: [
-              { text: 'Introduction', link: '/Vulkan/introduction.md' },
-              { text: 'Setup', link: '/Vulkan/setup.md'},
-              { text: 'Concepts', link: '/Vulkan/concepts.md'}
-            ]
-          }
-        ],
-        '/Software Computer Graphics/': [
-          {
-            text: 'Raytracing',
-            items: [
-              { text: 'Introduction', link: '/Software Computer Graphics/Raytracing/introduction.md' },
-              { text: 'Casting the rays', link: '/Software Computer Graphics/Raytracing/ray-generation.md' },
-            ],
-          },
-          {
-            text: 'Rasterizer',
-            items: [
-
-            ],
-          }
-        ],
+        ]
+        // '/Vulkan/': [
+        //   {
+        //     text: 'Vulkan',
+        //     items: [
+        //       { text: 'Introduction', link: '/Vulkan/introduction.md' },
+        //       { text: 'Setup', link: '/Vulkan/setup.md'},
+        //       { text: 'Concepts', link: '/Vulkan/concepts.md'}
+        //     ]
+        //   }
+        // ],
+        // '/Software Computer Graphics/': [
+        //   {
+        //     text: 'Raytracing',
+        //     items: [
+        //     ],
+        //   },
+        //   {
+        //     text: 'Rasterizer',
+        //     items: [
+        //     ],
+        //   },
+        //   {
+        //     text: 'Shaders',
+        //     items: [
+        //       { text: 'An introduction to shaders', link: '/Software Computer Graphics/Shaders/introduction.md' },
+        //       { text: 'Blending and Textures', link: '/Software Computer Graphics/Shaders/BlendingTextures.md' }
+        //     ]
+        //   }
+        //],
       },
       footer: {
         message: 'Made with Vitepress and Vue',

@@ -1,3 +1,5 @@
+![Vulkan mesh](/VulkanRasterizer/vulkan_end.png)
+
 # Vulkan rasterizer
 
 Starting from the 2nd year I started to have in interest in graphics programming, this lead me to
@@ -26,3 +28,13 @@ was starting to look good!
 
 Ofcourse a game these days needs to be able to render textures, so the next thing to do was to add textures 
 and that means.... MORE ATTACHMENTS
+
+After writing some more code we can now render textures on our meshes
+
+![Vulkan textured mesh](/VulkanRasterizer/vulkan_textured.png)
+
+Finally it was time to load in a mesh and test the final result for my first Vulkan application
+
+![Vulkan mesh](/VulkanRasterizer/vulkan_end.png)
+
+## [Github](https://github.com/SixArne/VulkanRenderer)

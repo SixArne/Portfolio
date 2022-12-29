@@ -70,6 +70,10 @@ private:
 
 ```
 
+After writing a bridge to switch between the 2 Renderers we have the following result
+
+![Rasterizer end](/rasterizer_end.png)
+
 ## Resources
 
 ## [Github](https://github.com/SixArne/Rasterizer-Arne-Six-2GD-08E)
