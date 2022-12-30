@@ -30,7 +30,7 @@ const projects = [
     goto: withBase('/Projects/City-scene')
   },
   {
-    avatar: withBase('/environments_icon.png'),
+    avatar: withBase('/environments_update_4.png'),
     name: 'Environments',
     title: 'Blender & Unreal engine',
     links: [
@@ -48,13 +48,32 @@ const projects = [
     goto: withBase('/Projects/Software-raytracer')
   },
   {
-    avatar: withBase('https://wizarddojo.files.wordpress.com/2015/05/mega-man-5-gravity-man-article_image.jpg'),
+    avatar: withBase('/rasterizer_end_thumbnail.png'),
     name: 'Software/DirectX rasterizer',
-    title: 'C++ & DirectX11',
+    title: 'C++, DirectX11 & Vulkan',
     links: [
       { icon: 'github', link: 'https://github.com/SixArne/Rasterizer-Arne-Six-2GD-08E' },
     ],
      goto: withBase('/Projects/Software-rasterizer')
+  },
+  {
+    avatar: withBase('/VulkanRasterizer/vulkan_end.png'),
+    name: 'Vulkan rasterizer',
+    title: 'C++ & Vulkan',
+    links: [
+      { icon: 'github', link: 'https://github.com/SixArne/VulkanRenderer' },
+    ],
+     goto: withBase('/Projects/Vulkan-rasterizer')
+  },
+
+   {
+    avatar: withBase('/chip8.png'),
+    name: 'CHIP-8 emulator',
+    title: 'SDL & C++',
+    links: [
+      { icon: 'github', link: 'https://github.com/SixArne/CHIP-8' },
+    ],
+     goto: withBase('/Projects/CHIP-8')
   },
 ]
 </script>
