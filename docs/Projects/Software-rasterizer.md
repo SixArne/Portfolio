@@ -1,3 +1,7 @@
+<iframe width="720" height="480" src="https://www.youtube.com/embed/q-QW6NCtMHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br><br/>
+
 # Software rasterizer
 
 In modern times we take the rasterizer in our graphic cards for granted, but what actually happens in these black boxes? That's what we learned in Graphics Programming I.
