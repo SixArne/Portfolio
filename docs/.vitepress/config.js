@@ -36,6 +36,9 @@ export default {
               { text: 'Software/DirectX rasterizer', link: '/Projects/Software-rasterizer.md' },
               { text: 'Megaman', link: '/Projects/Megaman.md' },
               { text: 'City Scene', link: '/Projects/City-scene.md' },
+              { text: 'Unreal - Game design', link: '/Projects/CubeGame.md' },
+              { text: 'Unity - Game mechanics', link: '/Projects/GrimReaper.md' },
+              { text: 'Unreal - Game mechanics', link: '/Projects/FlagGame.md' },
               { text: 'Environments Scene', link: '/Projects/Environments.md' },
             ]
           },

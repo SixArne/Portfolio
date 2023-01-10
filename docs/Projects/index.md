@@ -83,6 +83,24 @@ const projects = [
     ],
      goto: withBase('/Projects/Fuji-Engine')
   },
+  {
+    avatar: withBase('/unity.png'),
+    name: 'Game Mechanics',
+    title: 'Unity',
+    links: [
+      { icon: 'github', link: 'https://github.com/SixArne/Fuji' },
+    ],
+     goto: withBase('/Projects/GrimReaper')
+  },
+  {
+    avatar: withBase('/unreal.png'),
+    name: 'Game Mechanics',
+    title: 'Unreal',
+    links: [
+      { icon: 'github', link: 'https://github.com/SixArne/Fuji' },
+    ],
+     goto: withBase('/Projects/CubeGame')
+  },
 ]
 </script>
 
