@@ -4,10 +4,10 @@
 
 # City scene
 
-For our 3D I Subject we had to design, model and texture a small 3D panorama scene.
-I thougth for a while on what scene I wanted to make but after seeing princess Kaguya on Netflix I've decided that this was going to be my inspiration.
+For our 3D I Subject, we had to design, model, and texture a small 3D panorama scene.
+I thought for a while about what scene I wanted to make but after seeing princess Kaguya on Netflix I decided that this was going to be my inspiration.
 
-The story of princess Kaguya is one of the oldest folklore in Japanese mythology, I could list the entire story here but I just advice you to either read the original manuscript or watch the Netflix adoptation.
+The story of princess Kaguya is one of the oldest folklore in Japanese mythology, I could list the entire story here but I just advise you to either read the original manuscript or watch the Netflix adaptation.
 
 ![Kaguya-Hime](https://media.timeout.com/images/102189327/image.jpg)
 

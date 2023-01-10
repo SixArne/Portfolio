@@ -1,4 +1,4 @@
-# OpenGL Graphics
+# OpenGL Graphics [Work in progress]
 
 ## Why OpenGL?
 

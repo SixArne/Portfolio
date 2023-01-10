@@ -65,8 +65,7 @@ const projects = [
     ],
      goto: withBase('/Projects/Vulkan-rasterizer')
   },
-
-   {
+  {
     avatar: withBase('/chip8.png'),
     name: 'CHIP-8 emulator',
     title: 'SDL & C++',
@@ -74,6 +73,15 @@ const projects = [
       { icon: 'github', link: 'https://github.com/SixArne/CHIP-8' },
     ],
      goto: withBase('/Projects/CHIP-8')
+  },
+  {
+    avatar: withBase('/chip8.png'),
+    name: 'Fuji Game engine',
+    title: 'GLFW, C++, Vulkan, OpenGL',
+    links: [
+      { icon: 'github', link: 'https://github.com/SixArne/Fuji' },
+    ],
+     goto: withBase('/Projects/Fuji-Engine')
   },
 ]
 </script>
