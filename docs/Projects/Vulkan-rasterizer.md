@@ -1,6 +1,6 @@
 ![Vulkan mesh](/VulkanRasterizer/vulkan_end.png)
 
-# Vulkan rasterizer [Work in progress]
+# Vulkan rasterizer
 
 Starting from the 2nd year I started to have in interest in graphics programming, this lead me to
 search for API's to learn. Because we already learned DirectX11 in DAE I've decided to go and learn

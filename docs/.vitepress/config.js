@@ -40,6 +40,7 @@ export default {
               { text: 'Unity - Game mechanics', link: '/Projects/GrimReaper.md' },
               { text: 'Unreal - Game mechanics', link: '/Projects/FlagGame.md' },
               { text: 'Environments Scene', link: '/Projects/Environments.md' },
+              { text: 'Amber the witch', link: '/Projects/AmberTheWitch.md' }
             ]
           },
           {
@@ -47,11 +48,12 @@ export default {
             collapsible: true,
             collapsed: false,
             items: [
-              { text: 'OpenGL Graphic concepts', link: '/Projects/OpenGL-Graphics.md'},
+              // { text: 'OpenGL Graphic concepts', link: '/Projects/OpenGL-Graphics.md'},
               { text: 'Basic Vulkan rasterizer', link: '/Projects/Vulkan-rasterizer.md'},
-              { text: 'Fuji Game Engine', link: '/Projects/Fuji-Engine.md'},
+              { text: 'Crypt raider', link: '/Projects/CryptRaider.md' }
+              // { text: 'Fuji Game Engine', link: '/Projects/Fuji-Engine.md'},
               //{ text: 'Vulkan raytracer', link: '/Projects/Vulkan-raytracer.md'},
-              { text: 'CHIP-8 Emulator', link: '/Projects/CHIP-8.md'},
+              // { text: 'CHIP-8 Emulator', link: '/Projects/CHIP-8.md'},
             ],
           },
         ]
