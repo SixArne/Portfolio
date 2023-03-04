@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as r}from"./app.58a58253.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Software Computer Graphics/Rasterizer/introduction.md"}'),o={name:"Software Computer Graphics/Rasterizer/introduction.md"};function a(n,c,s,i,p,d){return e(),r("div")}const f=t(o,[["render",a]]);export{m as __pageData,f as default};
