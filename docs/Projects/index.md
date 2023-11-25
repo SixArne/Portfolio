@@ -12,6 +12,45 @@ import { withBase } from 'vitepress'
 
 const projects = [
   {
+    avatar: withBase('/Guides/RTG/cover.jpg'),
+    name: 'Runtime Terrain Generation',
+    title: 'Unreal Engine & C++',
+    links: [
+      { icon: 'github', link: '' },
+    ],
+    goto: withBase('/Projects/Personal/Runtime-Terrain-Generation')
+  },
+  {
+    avatar: withBase('/VulkanRasterizer/vulkan_end.png'),
+    name: 'Vulkan rasterizer',
+    title: 'C++ & Vulkan',
+    links: [
+      { icon: 'github', link: 'https://github.com/SixArne/VulkanRenderer' },
+    ],
+      goto: withBase('/Projects/Vulkan-rasterizer')
+  },
+  {
+    avatar: withBase('/chip8.png'),
+    name: 'CHIP-8 emulator',
+    title: 'SDL & C++',
+    links: [
+      { icon: 'github', link: 'https://github.com/SixArne/CHIP-8' },
+    ],
+     goto: withBase('/Projects/CHIP-8')
+  },
+  {
+    avatar: withBase('/chip8.png'),
+    name: 'Fuji Game engine',
+    title: 'GLFW, C++, Vulkan, OpenGL',
+    links: [
+      { icon: 'github', link: 'https://github.com/SixArne/Fuji' },
+    ],
+     goto: withBase('/Projects/Fuji-Engine')
+  },
+]
+
+const schoolProjects = [
+  {
     avatar: withBase('/megaman.png'),
     name: 'Megaman',
     title: 'C++ & SDL',
@@ -56,33 +95,7 @@ const projects = [
     ],
      goto: withBase('/Projects/Software-rasterizer')
   },
-  {
-    avatar: withBase('/VulkanRasterizer/vulkan_end.png'),
-    name: 'Vulkan rasterizer',
-    title: 'C++ & Vulkan',
-    links: [
-      { icon: 'github', link: 'https://github.com/SixArne/VulkanRenderer' },
-    ],
-     goto: withBase('/Projects/Vulkan-rasterizer')
-  },
-  {
-    avatar: withBase('/chip8.png'),
-    name: 'CHIP-8 emulator',
-    title: 'SDL & C++',
-    links: [
-      { icon: 'github', link: 'https://github.com/SixArne/CHIP-8' },
-    ],
-     goto: withBase('/Projects/CHIP-8')
-  },
-  {
-    avatar: withBase('/chip8.png'),
-    name: 'Fuji Game engine',
-    title: 'GLFW, C++, Vulkan, OpenGL',
-    links: [
-      { icon: 'github', link: 'https://github.com/SixArne/Fuji' },
-    ],
-     goto: withBase('/Projects/Fuji-Engine')
-  },
+  
   {
     avatar: withBase('/unity.png'),
     name: 'Game Mechanics',
@@ -102,6 +115,8 @@ const projects = [
      goto: withBase('/Projects/CubeGame')
   },
 ]
+
+
 </script>
 
 <VPTeamPage>
@@ -116,5 +131,17 @@ const projects = [
   <CustomProjectCards
     size="medium"
     :projects="projects"
+  />
+  <VPTeamPageTitle>
+    <template #title>
+      School projects
+    </template>
+    <template #lead>
+      The following projects were all made for school assignments
+    </template>
+  </VPTeamPageTitle>
+  <CustomProjectCards
+    size="medium"
+    :projects="schoolProjects"
   />
 </VPTeamPage>

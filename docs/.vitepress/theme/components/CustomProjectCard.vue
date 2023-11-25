@@ -147,12 +147,12 @@ defineProps<{
   box-shadow: var(--vp-shadow-3);
 }
 
+img {
+  height: 100%;
+}
+
 .avatar-img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+
   border-radius: 20%;
   object-fit: cover;
 }

@@ -1,7 +1,6 @@
 export default {
     base: '/Portfolio/',
     markdown: {
-      theme: 'material-palenight',
       lineNumbers: true
     },
     themeConfig: {
@@ -10,9 +9,14 @@ export default {
       //   apiKey: '60f71fb647190f6ba5ebf1a12ca59459', 
       //   indexName: 'project' 
       // }, 
+      search: {
+        provider: 'local'
+      },
       siteTitle: 'Six Arne Portfolio',
       nav: [
-        { text: 'Projects', link: '/Projects/index.md' }
+        { text: 'Projects', link: '/Projects/index.md' },
+        { text: 'Guides', link: '/Guides/index.md'},
+
         //{ text: 'Vulkan guide', link: '/Vulkan/introduction.md' },
         //{ text: 'Computer Graphics', link: '/Software Computer Graphics/index.md' }
       ],
@@ -28,6 +32,40 @@ export default {
             ]
           },
           {
+            text: 'Unreal Projects',
+            collapsible: true,
+            collapsed: false,
+            items: [
+              { text: 'Runtime terrain generator', link: '/Projects/Personal/Runtime-Terrain-Generation.md'}
+            ],
+          },
+          {
+            text: 'Engine Projects',
+            collapsible: true,
+            collapsed: false,
+            items: [
+              { text: 'Fuji Game Engine', link: '/Projects/Fuji-Engine.md'},
+              { text: 'Basic Vulkan rasterizer', link: '/Projects/Vulkan-rasterizer.md'},
+            ],
+          },
+          {
+            text: 'VR Projects',
+            collapsible: true,
+            collapsed: false,
+            items: [
+              { text: 'Don\'t Drown', link: '/Projects/VR/DontDrown.md' },
+              { text: 'Amber the witch', link: '/Projects/VR/AmberTheWitch.md' }
+            ],
+          },
+          {
+            text: 'Game jam Projects',
+            collapsible: true,
+            collapsed: false,
+            items: [
+              { text: 'Amber the witch', link: '/Projects/AmberTheWitch.md' }
+            ],
+          },
+          {
             text: 'School projects',
             collapsible: true,
             collapsed: false,
@@ -40,22 +78,9 @@ export default {
               { text: 'Unity - Game mechanics', link: '/Projects/GrimReaper.md' },
               { text: 'Unreal - Game mechanics', link: '/Projects/FlagGame.md' },
               { text: 'Environments Scene', link: '/Projects/Environments.md' },
-              { text: 'Amber the witch', link: '/Projects/AmberTheWitch.md' }
             ]
           },
-          {
-            text: 'Personal projects',
-            collapsible: true,
-            collapsed: false,
-            items: [
-              // { text: 'OpenGL Graphic concepts', link: '/Projects/OpenGL-Graphics.md'},
-              { text: 'Basic Vulkan rasterizer', link: '/Projects/Vulkan-rasterizer.md'},
-              { text: 'Crypt raider', link: '/Projects/CryptRaider.md' }
-              // { text: 'Fuji Game Engine', link: '/Projects/Fuji-Engine.md'},
-              //{ text: 'Vulkan raytracer', link: '/Projects/Vulkan-raytracer.md'},
-              // { text: 'CHIP-8 Emulator', link: '/Projects/CHIP-8.md'},
-            ],
-          },
+          
         ]
         // '/Vulkan/': [
         //   {

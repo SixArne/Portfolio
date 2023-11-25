@@ -12,9 +12,9 @@ hero:
     - theme: brand
       text: Projects
       link: /Projects/index.md
-    # - theme: alt
-    #   text: Vulkan
-    #   link: /Vulkan/introduction.md
+    - theme: alt
+      text: Guides
+      link: /Guides/index.md
     # - theme: alt
     #   text: Computer Graphics
     #   link: /Software Computer Graphics/index.md
