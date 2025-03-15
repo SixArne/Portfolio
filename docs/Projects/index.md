@@ -12,15 +12,6 @@ import { withBase } from 'vitepress'
 
 const projects = [
   {
-    avatar: withBase('/Guides/RTG/cover.jpg'),
-    name: 'Runtime Terrain Generation',
-    title: 'Unreal Engine & C++',
-    links: [
-      { icon: 'github', link: '' },
-    ],
-    goto: withBase('/Projects/Personal/Runtime-Terrain-Generation')
-  },
-  {
     avatar: withBase('/VulkanRasterizer/vulkan_end.png'),
     name: 'Vulkan rasterizer',
     title: 'C++ & Vulkan',

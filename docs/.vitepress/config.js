@@ -36,7 +36,17 @@ export default {
             collapsible: true,
             collapsed: false,
             items: [
-              { text: 'Runtime terrain generator', link: '/Projects/Personal/Runtime-Terrain-Generation.md'}
+              { text: 'Super Galaxy Rugby', link: '/Projects/Unreal/SuperGalaxyRugby.md'},
+              { text: 'Amber the witch', link: '/Projects/Unreal/AmberTheWitch.md' }
+            ],
+          },
+          {
+            text: 'Unity Projects',
+            collapsible: true,
+            collapsed: false,
+            items: [
+              { text: 'Don\'t Drown', link: '/Projects/Unity/DontDrown.md' },
+              { text: 'The Holy Grail', link: '/Projects/Unity/TheHolyGrail.md' }
             ],
           },
           {
@@ -46,23 +56,7 @@ export default {
             items: [
               { text: 'Fuji Game Engine', link: '/Projects/Fuji-Engine.md'},
               { text: 'Basic Vulkan rasterizer', link: '/Projects/Vulkan-rasterizer.md'},
-            ],
-          },
-          {
-            text: 'VR Projects',
-            collapsible: true,
-            collapsed: false,
-            items: [
-              { text: 'Don\'t Drown', link: '/Projects/VR/DontDrown.md' },
-              { text: 'Amber the witch', link: '/Projects/VR/AmberTheWitch.md' }
-            ],
-          },
-          {
-            text: 'Game jam Projects',
-            collapsible: true,
-            collapsed: false,
-            items: [
-              { text: 'Amber the witch', link: '/Projects/AmberTheWitch.md' }
+              { text: 'Megaman', link: '/Projects/Native/Megaman.md' },
             ],
           },
           {
