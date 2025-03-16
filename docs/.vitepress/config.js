@@ -54,7 +54,6 @@ export default {
             collapsible: true,
             collapsed: false,
             items: [
-              { text: 'Fuji Game Engine', link: '/Projects/Fuji-Engine.md'},
               { text: 'Basic Vulkan rasterizer', link: '/Projects/Vulkan-rasterizer.md'},
               { text: 'Megaman', link: '/Projects/Native/Megaman.md' },
             ],
@@ -62,7 +61,7 @@ export default {
           {
             text: 'School projects',
             collapsible: true,
-            collapsed: false,
+            collapsed: true,
             items: [
               { text: 'Software raytracer', link: '/Projects/Software-raytracer.md' },
               { text: 'Software/DirectX rasterizer', link: '/Projects/Software-rasterizer.md' },

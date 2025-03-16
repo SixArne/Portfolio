@@ -3,10 +3,10 @@ layout: home
 
 hero:
   name: C++
-  text: Game/Engine developer.
+  text: Game developer.
   tagline: Six Arne
   image:
-    src: https://avatars.githubusercontent.com/u/67325807?v=4
+    src: /arne.jpg
     alt: VitePress
   actions:
     - theme: brand

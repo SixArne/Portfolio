@@ -21,22 +21,22 @@ const projects = [
       goto: withBase('/Projects/Vulkan-rasterizer')
   },
   {
-    avatar: withBase('/chip8.png'),
-    name: 'CHIP-8 emulator',
-    title: 'SDL & C++',
-    links: [
-      { icon: 'github', link: 'https://github.com/SixArne/CHIP-8' },
-    ],
-     goto: withBase('/Projects/CHIP-8')
+    avatar: withBase('/dontdrown.png'),
+    name: 'Don\'t Drown',
+    title: 'Unity & C#',
+    goto: withBase('/Projects/Unity/DontDrown')
   },
   {
-    avatar: withBase('/chip8.png'),
-    name: 'Fuji Game engine',
-    title: 'GLFW, C++, Vulkan, OpenGL',
-    links: [
-      { icon: 'github', link: 'https://github.com/SixArne/Fuji' },
-    ],
-     goto: withBase('/Projects/Fuji-Engine')
+    avatar: withBase('/theholygrail.png'),
+    name: 'The Holy Grail',
+    title: 'Unity & C#',
+    goto: withBase('/Projects/Unity/TheHolyGrail')
+  },
+  {
+    avatar: withBase('/supergalaxyrugbybanner.png'),
+    name: 'Super Galaxy Rugby',
+    title: 'Unreal & C++',
+    goto: withBase('/Projects/Unreal/SuperGalaxyRugby')
   },
 ]
 
