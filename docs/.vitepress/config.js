@@ -37,7 +37,8 @@ export default {
             collapsed: false,
             items: [
               { text: 'Super Galaxy Rugby', link: '/Projects/Unreal/SuperGalaxyRugby.md'},
-              { text: 'Amber the witch', link: '/Projects/Unreal/AmberTheWitch.md' }
+              { text: 'Amber the witch', link: '/Projects/Unreal/AmberTheWitch.md' },
+              { text: 'Untitled Horror Game', link: '/Projects/Unreal/UntitledHorrorGame.md' }
             ],
           },
           {
@@ -54,6 +55,7 @@ export default {
             collapsible: true,
             collapsed: false,
             items: [
+              { text: 'Vulkan Shader Processor', link: '/Projects/Native/VulkanShaderProcessor'},
               { text: 'Basic Vulkan rasterizer', link: '/Projects/Vulkan-rasterizer.md'},
               { text: 'Megaman', link: '/Projects/Native/Megaman.md' },
             ],
