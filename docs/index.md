@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: C++
-  text: Game developer.
+  name: Junior
+  text: Backend/Game developer.
   tagline: Six Arne
   image:
     src: /arne.jpg
