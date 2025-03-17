@@ -32,6 +32,14 @@ export default {
             ]
           },
           {
+            text: 'Python Projects',
+            collapsible: true,
+            collapsed: false,
+            items: [
+              { text: 'Python Weather Station', link: '/Projects/Python/PythonSensehatProject.md'},
+            ],
+          },
+          {
             text: 'Unreal Projects',
             collapsible: true,
             collapsed: false,
